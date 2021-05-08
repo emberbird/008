@@ -8,14 +8,27 @@
     <meta name="generator" content="Hugo 0.83.1">
     <title>sample</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+      body div{     	
+      	border:none;
+      	box-shadow: none;
+      	background-color:rgba(0,0,0,0);
+      }
+
+      .container{
+      	border:none;
+      	box-shadow: none;
+      	background-color:rgba(0,0,0,0);
+
+      }
       .text-small{
         font-size: 12px;
         padding: 5px;
@@ -45,7 +58,14 @@
       border-color: white;
       }
 
-        #map {
+        #map {@media screen and (max-width: 768px) {
+  img { 
+    display: none; 
+  }
+  img.smallscreen { 
+    display: block; 
+  }
+}
         height: 400px;
         width: 100%;
        }
@@ -55,6 +75,17 @@
           font-size: 3.5rem;
         }
       }
+
+  @media screen and (max-width: 768px) {
+  .carousel img { 
+    height: 350px; 
+  }
+  
+  img.smallscreen { 
+    display: block; 
+  }
+}
+
     </style>
    
   </head>
